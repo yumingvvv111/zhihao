@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      植好
+    </ion-title>
+  
+  
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="chatboxes" lazy="false"></ion-icon>
+      </ion-button>
+      <ion-button >
+        <ion-icon slot="icon-only" name="search" lazy="false"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+
+  <ion-card>
+  <ion-slides [options]="slideOptions">
+    <ion-slide *ngFor="let item of items">
+      <ion-img class="banner-image" [src]="item.src">
+          <ion-infinite-scroll-content>
+                <ion-spinner color="medium"></ion-spinner>
+              </ion-infinite-scroll-content>
+        </ion-img>
+    </ion-slide>
+  </ion-slides>
+  </ion-card>
+  
+<ion-infinite-scroll>
+  <ion-list>
+    <ion-item>
+    <ion-label><h2>瞧瞧你的家的苹果这么丑丑丑丑丑丑丑丑
+        </h2>
+        <div class="home-list-item">
+          <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+      </ion-avatar>
+      <b>植好</b>
+      <span>07-03 08:09</span>
+      </div>
+        </ion-label>
+      <ion-thumbnail slot="end">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-thumbnail>
+    </ion-item>
+    
+    <ion-item>
+    <ion-label><h2>瞧瞧你的家的苹果这么丑丑丑丑丑丑丑丑
+        </h2>
+        <div class="home-list-item">
+          <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+      </ion-avatar>
+      <b>植好</b>
+      <span>07-03 08:09</span>
+      </div>
+        </ion-label>
+      <ion-thumbnail slot="end">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-thumbnail>
+    </ion-item>
+
+    
+  </ion-list>
+  
+  </ion-infinite-scroll>
+  <div class="bottom-wrapper">
+  <app-buttom-bar></app-buttom-bar>  
+  </div>
+</ion-content>
+

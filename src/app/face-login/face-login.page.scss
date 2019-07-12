@@ -1,0 +1,41 @@
+
+:host{
+  ion-content {
+        --background: transparent;
+    }
+}
+.front-mask{
+  width: 100%;
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  top: -20px;
+  right: 0;
+  bottom: 0;
+}
+.video-background{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 7777;
+}
+
+.canvas-frame{
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8888;
+}
+
+.welcome-wrapper{
+  position: absolute;
+  z-index: 99999;
+  width: 100%;
+  text-align: center;
+  top: 80%;
+  font-size: 30px;
+}

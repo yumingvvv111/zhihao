@@ -1,0 +1,21 @@
+
+
+ .bottom-bar{
+  width: 100%;
+  height: 85px;
+  ion-col{
+    width: 20%;
+    text-align: center;
+  }
+  ion-segment{
+    border-radius: 0;
+    ion-segment-button{
+      border: none;
+      border-radius: 0;
+      width: 100%;
+      margin-left:-10px;
+    }
+  }
+}
+
+

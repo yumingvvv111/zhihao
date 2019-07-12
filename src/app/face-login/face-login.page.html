@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>人脸登录</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <img class="front-mask" src="./assets/images/avatar02.png"/>
+<div class="welcome-wrapper" *ngIf="gotName">恭喜您 {{ name }} 打卡成功</div>
+</ion-content>

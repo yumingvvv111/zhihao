@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
+    <ion-title>登录</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-card>
+    <ion-card-header>
+      
+    
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+             
+          </ion-col>
+          <ion-col>
+             
+            <ion-avatar>
+              <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+            </ion-avatar>
+
+          </ion-col>
+          <ion-col>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <form>
+              <ion-list>
+                <ion-item>
+                  <ion-label>账号</ion-label>
+                  <ion-input type="text"></ion-input>
+                </ion-item>
+                <ion-item>
+                  <ion-label>密码</ion-label>
+                  <ion-input type="password"></ion-input>
+                </ion-item>
+              </ion-list>
+              <div>
+                  
+            <ion-button expand="block" fill="solid" style="width:100%; margin:20px 0;">登录</ion-button>
+                </div>
+                  <div style="width:100%; text-align:right;">
+                    <a style="">忘记密码</a>
+                  </div>
+            </form>
+            
+    </ion-card-content>
+  </ion-card>
+
+  <div style="width100%; text-align:center; padding-top:80px; font-size:13px;">
+    <a id="a1" (click)="goto($event)">使用人脸识别登录</a>
+  </div>
+</ion-content>
