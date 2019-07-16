@@ -1,100 +1,120 @@
 <ion-header>
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button text="返回"></ion-back-button>
+    </ion-buttons>
     <ion-title>选择您要诊断的农作物</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
   <ion-grid style="padding-top:20px;">
     <ion-row>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p1" style="margin: 0 auto;" (click)="goto('apple')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">苹果</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p1" style="margin: 0 auto;" (click)="goto('grape')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">葡萄</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p1" style="margin: 0 auto;" (click)="goto('orange')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">柑橘</label>
       </ion-col>
-      
     </ion-row>
-
-
 
     <ion-row>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p1" style="margin: 0 auto;" (click)="goto('peanut')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">花生</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p2" style="margin: 0 auto;" (click)="goto('tomato')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">番茄</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p3" style="margin: 0 auto;" (click)="goto('cucumber')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">黄瓜</label>
       </ion-col>
     </ion-row>
 
-
     <ion-row>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p4" style="margin: 0 auto;" (click)="goto('eggplant')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">茄子</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p5" style="margin: 0 auto;" (click)="goto('pepper')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">辣椒</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p6" style="margin: 0 auto;" (click)="goto('potato')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">马铃薯</label>
       </ion-col>
     </ion-row>
 
-
     <ion-row>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p7" style="margin: 0 auto;" (click)="goto('garlic')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">大蒜</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p8" style="margin: 0 auto;" (click)="goto('wheat')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">小麦</label>
       </ion-col>
       <ion-col style="text-align:center;">
-        <ion-avatar style="margin: 0 auto;">
-          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22">
+        <ion-avatar id="p9" style="margin: 0 auto;" (click)="goto('maize')">
+          <img
+            src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=retro&f=y%22"
+          />
         </ion-avatar>
         <label style="margin-top:10px;display:block;">玉米</label>
       </ion-col>
     </ion-row>
   </ion-grid>
-
 </ion-content>

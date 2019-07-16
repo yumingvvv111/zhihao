@@ -20,7 +20,8 @@ const routes: Routes = [
   { path: 'ask-home', loadChildren: './ask-home/ask-home.module#AskHomePageModule' },
   { path: 'my-setting-home', loadChildren: './my-setting-home/my-setting-home.module#MySettingHomePageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
-  { path: 'face-login', loadChildren: './face-login/face-login.module#FaceLoginPageModule' }
+  { path: 'face-login', loadChildren: './face-login/face-login.module#FaceLoginPageModule' },
+  { path: 'scan-plantplant', loadChildren: './scan-plantplant/scan-plantplant.module#ScanPlantplantPageModule' }
 ];
 
 @NgModule({

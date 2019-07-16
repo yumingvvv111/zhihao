@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as echarts from '../../assets/js/echarts-all-3.js';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-my-setting-home',
@@ -7,8 +8,13 @@ import * as echarts from '../../assets/js/echarts-all-3.js';
   styleUrls: ['./my-setting-home.page.scss'],
 })
 export class MySettingHomePage implements OnInit {
-
-  constructor() { }
+  public name: string = '姓名';
+  public email: string = '123456@email.com';
+  constructor(
+    private route: ActivatedRoute,
+  ) {
+    this.name = this.route.snapshot.paramMap.get('name');
+  }
 
   ngOnInit() {
     var myChart = echarts.init(document.getElementById('myGraph'));

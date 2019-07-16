@@ -1,0 +1,34 @@
+:host {
+  ion-content {
+    --background: transparent;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+    .trigger-wrapper {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      z-index: 999;
+      bottom:0;
+      left: 0;
+    }
+    button{
+      width: 6em;
+      height: 6em;
+      border-radius: 3em;
+      opacity: 0.35;
+      color: #fff;
+      ion-icon{
+        width: 80%;
+        height: 80%;
+        color: #fff;
+      }
+}
+.cancel{}
+.trigger{
+  // background: #000;
+}
+.submit{}
+  }
+}

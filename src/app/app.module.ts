@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Camera } from '@ionic-native/camera/ngx';
 import { CameraPreview } from '@ionic-native/camera-preview/ngx';
+import { AiFaceService } from './ai-face.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { CameraPreview } from '@ionic-native/camera-preview/ngx';
     SplashScreen,
     Camera,
     CameraPreview,
+    AiFaceService,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
